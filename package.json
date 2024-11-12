@@ -50,7 +50,7 @@
     "@storybook/core-server": "^8.2.8",
     "@storybook/jest": "^0.2.3",
     "@storybook/react-webpack5": "^8.2.8",
-    "@storybook/test-runner": "^0.13.0",
+    "@storybook/test-runner": "^0.19.1",
     "@storybook/testing-library": "^0.2.2",
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
