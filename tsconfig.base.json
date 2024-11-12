@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@digital-staff-passport/features": ["libs/data-access/src/index.ts"],
+      "@digital-staff-passport/localization": [
+        "libs/localization/src/index.ts"
+      ],
+      "@digital-staff-passport/ui": ["libs/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
