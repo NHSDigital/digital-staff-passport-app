@@ -1,0 +1,5 @@
+.openapi-generator-ignore
+apis/index.ts
+index.ts
+models/index.ts
+runtime.ts
