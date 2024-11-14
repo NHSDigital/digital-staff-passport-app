@@ -1,5 +1,5 @@
 import { Text } from 'react-native';
 
 export default function Page() {
-  return <Text>Top-level page</Text>;
+  return <Text>Home Page of the application</Text>;
 }
