@@ -1,0 +1,15 @@
+{
+    //LANDING PAGE
+    "LANDING_PAGE": {
+      "BODY": "Set up your NHS Digital Staff Passport",
+      "BUTTON": "Continue"
+    },
+    //PROVE IDENTITY
+    "PROVE_IDENTITY": {
+      "TITLE": "NHS Digital Staff Passport",
+      "CARD": {
+        "HEADER": "Prove who you are to get full access",
+        "BODY": "You'll need to prove your identity before you can use NHS Digital Staff Passport"
+      } 
+    }
+}
