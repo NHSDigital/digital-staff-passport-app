@@ -1,7 +1,9 @@
-// Will contain the authentication logic to redirect the user if they are not logged in
-import React from 'react';
-import { Slot } from 'expo-router';
+import { Stack } from 'expo-router/stack';
 
-export default function index() {
-  return <Slot />;
+export default function Layout() {
+  return (
+    <Stack>
+      <Stack.Screen name="(tabs)" />
+    </Stack>
+  );
 }
