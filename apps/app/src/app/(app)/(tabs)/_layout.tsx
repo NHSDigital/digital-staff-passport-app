@@ -56,12 +56,14 @@ export default function TabLayout() {
       <Tabs.Screen
         name="share/index"
         options={{
+          headerShown: false,
           href: null,
         }}
       />
       <Tabs.Screen
         name="issue/index"
         options={{
+          headerShown: false,
           href: null,
         }}
       />
