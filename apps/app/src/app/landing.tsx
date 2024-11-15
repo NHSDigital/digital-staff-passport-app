@@ -21,7 +21,7 @@ export default function Landing() {
         </Text>
       </View>
 
-      <Button title="Login" onPress={toggleLogin} />
+      <Button title="Continue" onPress={toggleLogin} action="primary" />
       <View style={{ alignItems: 'center' }}>
         <Text
           style={{
