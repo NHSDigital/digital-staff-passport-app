@@ -5,6 +5,7 @@
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
+    "jsx": "react-jsx",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
