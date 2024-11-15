@@ -6,52 +6,20 @@ export interface ButtonProps {
   onPress: () => void;
 }
 
-export function Buttons ({
-  title,
-  action,
-  onPress
-}: ButtonProps) {
-  const getStyle = () => {
-    if (action === 'primary') {
-      return {
-        backgroundColor: '#FFFFFF',
-        textColor: '#002F5C',
-        borderColor: '#002F5C',
-        shadowColor: '#212B32',
-      };
-    } else {
-      return {
-        backgroundColor: '#007F3B',
-        textColor: '#FFFFFF',
-        shadowColor: '#00411D',
-      };
-    }
-  };
-
-  const styles = getStyle();
-
+export function Buttons({ title, action, onPress }: ButtonProps) {
   return (
-    <View style={buttonStyles.container}>
+    <View style={styles.container}>
       <TouchableOpacity
-        style={[
-          buttonStyles.button,
-          {
-            backgroundColor: styles.backgroundColor,
-            borderColor: styles.borderColor,
-            shadowColor: styles.shadowColor,
-          },
-        ]}
+        style={[styles.button, styles.secondary]}
         onPress={onPress}
       >
-        <Text style={[buttonStyles.text, { color: styles.textColor }]}>
-          {title}
-        </Text>
+        <Text style={[styles.text]}>{title}</Text>
       </TouchableOpacity>
     </View>
   );
-};
+}
 
-const buttonStyles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     margin: 5,
     borderRadius: 5,
@@ -65,6 +33,12 @@ const buttonStyles = StyleSheet.create({
     shadowOpacity: 0.8,
     shadowRadius: 2,
     elevation: 5,
+  },
+  primary: {
+    color: 'red',
+  },
+  secondary: {
+    color: 'blue',
   },
   text: {
     textAlign: 'center',
