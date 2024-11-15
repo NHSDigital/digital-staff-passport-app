@@ -1,6 +1,6 @@
 import React from 'react';
 import { Slot } from 'expo-router';
-// import { AuthProvider } from '../../contexts/useAuthContext';
+import { AuthProvider } from '@digital-staff-passport/features';
 import {
   SafeAreaProvider,
   SafeAreaView,
@@ -9,12 +9,12 @@ import {
 
 export default function index() {
   return (
-    // <AuthProvider>
-    <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-      <SafeAreaView style={{ flex: 1 }}>
-        <Slot />
-      </SafeAreaView>
-    </SafeAreaProvider>
-    // </AuthProvider>
+    <AuthProvider>
+      <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+        <SafeAreaView style={{ flex: 1 }}>
+          <Slot />
+        </SafeAreaView>
+      </SafeAreaProvider>
+    </AuthProvider>
   );
 }

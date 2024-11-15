@@ -1,12 +1,12 @@
 import { Stack } from 'expo-router/stack';
 import { Redirect } from 'expo-router';
 
-// import { useAuth } from './../../../contexts/useAuthContext';
+import { useAuth } from '@digital-staff-passport/features';
 
 export default function Layout() {
-  // const { isLoggedIn } = useAuth();
+  const { isLoggedIn } = useAuth();
 
-  if (false) {
+  if (!isLoggedIn) {
     return <Redirect href={'/landing'} />;
   }
 

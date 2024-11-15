@@ -1,8 +1,8 @@
 import { Button, Text, View } from 'react-native';
-// import { useAuth } from './../../contexts/useAuthContext';
+import { useAuth } from '@digital-staff-passport/features';
 
 export default function Landing() {
-  // const { toggleLogin } = useAuth();
+  const { toggleLogin } = useAuth();
   return (
     <View
       style={{ flex: 1, backgroundColor: '#015EB8', alignContent: 'center' }}
@@ -20,7 +20,7 @@ export default function Landing() {
         </Text>
       </View>
 
-      {/* <Button title="Login" onPress={toggleLogin} /> */}
+      <Button title="Login" onPress={toggleLogin} />
       <View style={{ alignItems: 'center' }}>
         <Text
           style={{
