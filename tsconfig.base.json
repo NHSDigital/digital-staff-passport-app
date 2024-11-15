@@ -12,11 +12,12 @@
     "module": "esnext",
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
+    "jsx": "react-native",
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@digital-staff-passport/features": ["libs/data-access/src/index.ts"],
-      "@digital-staff-passport/localization": [
+      "@data-access": ["libs/data-access/src/index.ts"],
+      "@localization": [
         "libs/localization/src/index.ts"
       ],
       "@digital-staff-passport/ui": ["libs/ui/src/index.ts"]
