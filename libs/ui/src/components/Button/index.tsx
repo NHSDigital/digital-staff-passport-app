@@ -7,10 +7,12 @@ export interface ButtonProps {
 }
 
 export function Buttons({ title, action, onPress }: ButtonProps) {
+  const isPrimary = action === 'primary';
+
   return (
-    <View style={[styles.container, true ? styles.primary : styles.secondary]}>
+    <View style={[styles.container, isPrimary ? styles.primary : styles.secondary]}>
       <TouchableOpacity style={[styles.button]} onPress={onPress}>
-        <Text style={[styles.text]}>{title}</Text>
+        <Text style={[isPrimary ? styles.primarytext : styles.secondarytext]}>{title}</Text>
       </TouchableOpacity>
     </View>
   );
@@ -32,12 +34,21 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   primary: {
-    backgroundColor: 'red',
+    backgroundColor: '#FFFFFF',
+    borderColor: '#002F5C',
+    shadowColor: '#212B32',
   },
   secondary: {
-    backgroundColor: 'blue',
+    backgroundColor: '#007F3B',
+    shadowColor: '#00411D',
   },
-  text: {
+  primarytext: {
+    color: '#002F5C',
+    textAlign: 'center',
+    fontWeight: 'bold',
+  },
+  secondarytext: {
+    color: '#FFFFFF',
     textAlign: 'center',
     fontWeight: 'bold',
   },
