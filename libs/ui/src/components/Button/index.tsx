@@ -8,11 +8,8 @@ export interface ButtonProps {
 
 export function Buttons({ title, action, onPress }: ButtonProps) {
   return (
-    <View style={styles.container}>
-      <TouchableOpacity
-        style={[styles.button, styles.secondary]}
-        onPress={onPress}
-      >
+    <View style={[styles.container, true ? styles.primary : styles.secondary]}>
+      <TouchableOpacity style={[styles.button]} onPress={onPress}>
         <Text style={[styles.text]}>{title}</Text>
       </TouchableOpacity>
     </View>
@@ -35,10 +32,10 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   primary: {
-    color: 'red',
+    backgroundColor: 'red',
   },
   secondary: {
-    color: 'blue',
+    backgroundColor: 'blue',
   },
   text: {
     textAlign: 'center',
