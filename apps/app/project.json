@@ -4,6 +4,6 @@
   "sourceRoot": "apps/app/src",
   "projectType": "application",
   "tags": [],
-  "// targets": "to see all targets run: nx show project app --web",
+  "// targets": "to see all targets run: nx show project app",
   "targets": {}
 }
