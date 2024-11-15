@@ -7,17 +7,18 @@
   "dependencies": {
     "@testing-library/jest-native": "*",
     "@testing-library/react-native": "*",
+    "expo": "*",
+    "expo-constants": "*",
+    "expo-linking": "*",
+    "expo-router": "*",
+    "expo-status-bar": "*",
     "metro-config": "*",
     "react-native": "*",
-    "expo": "*",
-    "react-native-svg": "*",
-    "react-native-web": "*",
-    "expo-router": "*",
     "react-native-safe-area-context": "*",
     "react-native-screens": "*",
-    "expo-linking": "*",
-    "expo-constants": "*",
-    "expo-status-bar": "*"
+    "react-native-svg": "*",
+    "react-native-web": "*",
+    "zustand": "*"
   },
   "scripts": {
     "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . apps/app"
