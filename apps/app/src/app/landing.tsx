@@ -1,4 +1,5 @@
-import { Button, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+import { Button } from '@digital-staff-passport/ui';
 import { useAuth } from '@digital-staff-passport/features';
 
 export default function Landing() {

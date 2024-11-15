@@ -20,7 +20,7 @@
       "@digital-staff-passport/localization": [
         "libs/localization/src/index.ts"
       ],
-      "@digital-staff-passport/ui": ["libs/ui/src/index.ts"]
+      "@digital-staff-passport/ui": ["libs/ui/src/lib/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
