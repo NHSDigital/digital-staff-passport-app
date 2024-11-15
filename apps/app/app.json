@@ -3,6 +3,7 @@
     "name": "App",
     "slug": "app",
     "version": "1.0.0",
+    "scheme": "nhs.dsp.staffwallet",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
