@@ -1,5 +1,6 @@
 import React from 'react';
 import { Slot } from 'expo-router';
+import { AuthProvider } from '../../contexts/useAuthContext';
 import {
   SafeAreaProvider,
   SafeAreaView,
@@ -8,10 +9,12 @@ import {
 
 export default function index() {
   return (
-    <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-      <SafeAreaView style={{ flex: 1 }}>
-        <Slot />
-      </SafeAreaView>
-    </SafeAreaProvider>
+    <AuthProvider>
+      <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+        <SafeAreaView style={{ flex: 1 }}>
+          <Slot />
+        </SafeAreaView>
+      </SafeAreaProvider>
+    </AuthProvider>
   );
 }
